@@ -52,6 +52,8 @@ table {
 
 *{
     box-sizing: border-box;
+    text-align: start;
+    text-decoration: none;
 }
 
 
@@ -69,6 +71,7 @@ $transition1: all 0.3s ease-in-out;
 	font-size: 52px;
     text-decoration: none;
     color: $bluehard;
+    text-align: start;
 }
 
 .heading2-blue{
@@ -83,6 +86,7 @@ $transition1: all 0.3s ease-in-out;
 	font-size: 28px;
     text-decoration: none;
     color: $redhard;
+    margin-bottom: 1rem;
 }
 
 .heading3-red{
@@ -90,6 +94,7 @@ $transition1: all 0.3s ease-in-out;
 	font-size: 18px;
     text-decoration: none;
     color: $redhard;
+    margin-bottom: 0.6rem;
 }
 
 .text-blue{
@@ -100,6 +105,7 @@ $transition1: all 0.3s ease-in-out;
     max-width: 450px;
     margin-bottom: 10px;
     text-decoration: none; 
+    text-align: start;
 }
 
 .text-red{

@@ -1,0 +1,42 @@
+@import '../../styles.scss';
+
+
+.footer-wrapper{
+    border-top: solid #ce6969 1px ;
+    width: 100%;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+
+    .mailto{
+        margin-right: auto;
+        margin-top: 5px; 
+        transition: ease-in 0.1s;
+
+
+        &:hover{
+            color: #ce6969 ;
+        }
+    }
+
+
+    .social-icon{
+
+        height: 100%;
+        width: 5%;
+
+        svg{
+               max-height: 26px;
+               margin-bottom: auto;
+               fill: $redsoft;
+               transition: ease-in 0.1s;    
+               &:hover{
+                   max-height: 30px;
+                   fill: $redhard;
+               }
+           }
+
+    }
+
+
+}
