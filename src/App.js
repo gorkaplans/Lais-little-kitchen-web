@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Recetas from './pages/Recetas'
 import Contact from './pages/Contact'
+import RecetaDetail from './pages/RecetaDetail';
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
             <Route path="/About" exact>
                 <About />
             </Route>
+            <Route path="/Recetas/:id">
+              <RecetaDetail />
+         </Route>
         </Switch>  
     </Router>
     </div>

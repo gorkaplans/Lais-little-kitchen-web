@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react'; 
 import { Link } from 'react-router-dom';
-import {  client } from '../../client'
+import {  client } from '../../client'; 
+import { useHistory } from "react-router-dom";
 
-import ProjectThumbnail from '../projectThumbnail'
+
 
 import'./Projects.scss'
 
@@ -11,6 +12,13 @@ import'./Projects.scss'
 
 const Projects = ({}) => {
     const[recetas, setRecetas] = useState([])
+
+    let history = useHistory();
+
+    const handleOnClick = (id) =>{
+      history.push(`Recetas/${id}`) 
+    }    
+     
 
     useEffect(() => {
         client.getEntries()
@@ -21,10 +29,7 @@ const Projects = ({}) => {
 
         
     }, ([]));
-
-    console.log(recetas)
     
-
     return (
     <section className="section">
         <div className="container title-projects">
@@ -36,10 +41,10 @@ const Projects = ({}) => {
             <>
             <div className="project-preview">
                 <h1 className="heading3-red">{receta.fields.name}</h1>
-                <Link to='/About'>
-                <p className="text-red">Ver receta</p>
-                <img className="image-preview" src={receta.fields.image.fields.file.url}></img>
-                </Link>
+                <div className="div-link" onClick={() => handleOnClick(receta.sys.id)}>
+                    <p className="text-red">Ver receta</p>
+                    <img className="image-preview" src={receta.fields.image.fields.file.url}></img>
+                </div>
             </div>
             </>
             )}

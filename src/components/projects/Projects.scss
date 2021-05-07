@@ -11,6 +11,8 @@
   grid-template-rows: 1fr 1fr;
   gap: 3rem 3rem;
 
+  .div-link{
+    cursor: pointer;
 
   .image-preview{
     height: 30vh;
@@ -25,6 +27,7 @@
     &:hover{
       opacity: 1;
     }
+  }
   }
 }
 
