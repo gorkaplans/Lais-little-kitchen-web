@@ -9,5 +9,63 @@
       margin-left: 60px;
     }
 }
+
+
+.ham{
+    display: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    span{
+      display: block;
+      background-color: $bluesoft;
+      height: 3px;
+      width: 28px;
+      margin: 5px auto;
+      border-radius: 2px;
+    }
+}
   
-  
+@media (max-width: 710px){
+  .nav-menu{
+    padding-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+
+
+
+
+ 
+    .nav-item{
+      height: 100%;
+      width: 100%;
+      margin-left: 0;
+      padding-top: 10px; 
+      padding-bottom: 10px;
+      background-color: $redsoft;
+      text-align: center !important;
+    }
+  }
+
+  .activado{
+    display: flex;
+  }
+
+  .ham{
+    display: block;
+    position: absolute;
+    top:15px; 
+    right: 25px;
+  }
+
+  .mobile-logo{
+      max-width: 100px;
+      margin-right: 10px;;
+  }
+}  

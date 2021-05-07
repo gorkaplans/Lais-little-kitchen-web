@@ -72,6 +72,7 @@ $transition1: all 0.3s ease-in-out;
     text-decoration: none;
     color: $bluehard;
     text-align: start;
+    
 }
 
 .heading2-blue{
@@ -126,7 +127,23 @@ $transition1: all 0.3s ease-in-out;
 
 
 
+@media (max-width: 900px){
+    .container{
+        padding: 20px 40px 20px 40px;
+    }
 
+    .heading2-red{
+        font-size: 22px;
+        text-decoration: none;
+        color: $redhard;
+        margin-bottom: 1rem;
+    }
 
+    .heading{
+        font-size: 36px;
+    }
 
-
+    .text-blue{
+        font-size: 12px;
+    }
+}

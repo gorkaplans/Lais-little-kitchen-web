@@ -27,3 +27,14 @@
     }
   }
 }
+
+
+@media (max-width: 900px){
+
+  .projects-wrapper{
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 3rem 3rem;
+  }
+}
