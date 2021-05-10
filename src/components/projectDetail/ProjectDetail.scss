@@ -1,2 +1,44 @@
 @import '../../styles.scss';
 
+.detail-hero{
+    display: flex;
+    flex-direction: column;
+
+    .detail-img{
+        min-width: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+
+    .index-detail{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 2rem;
+
+        .index-item-wrapper{
+            margin-right: 10rem;
+
+            .title-index{
+                margin-bottom: 1rem;
+            }
+        }
+
+        .ingredients-wrapper{
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 5rem;
+        }
+
+        .title-index{
+            margin-bottom: 1rem;
+        }
+
+
+
+
+    }
+}
