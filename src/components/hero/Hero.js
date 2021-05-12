@@ -19,11 +19,4 @@ const Hero = ({text, text2, image}) => {
     
     ) } 
 
-
-    <Link className="logo" to='/'></Link>
-
-
-  
-
-  
-  export default Hero;
+export default Hero;

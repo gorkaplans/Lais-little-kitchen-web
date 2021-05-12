@@ -1,0 +1,42 @@
+@import '../../styles.scss';
+
+
+.text-about-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 6rem;
+
+  .p-about{
+    margin-bottom: 3rem;
+  }
+}
+
+.image-about{
+  object-fit: cover;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 1rem;
+
+}
+
+
+
+@media (max-width: 900px){
+
+  .text-about-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 6rem;
+  
+    .p-about{
+      margin-bottom: 1rem;
+    }
+  }
+
+  .image-about{
+  margin-top: 3rem;
+  
+  }
+
+}
+  
