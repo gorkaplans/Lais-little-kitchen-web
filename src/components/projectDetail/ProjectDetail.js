@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import marked from 'marked'
 
 
@@ -20,7 +20,8 @@ const ProjectDetail = () => {
 
 
     let { id } = useParams()
-/*     const formatDescription = marked(description) */
+    
+    const formatDescription = marked(description)  
 
 
     async function getSingleReceta(idReceta) {
@@ -28,7 +29,7 @@ const ProjectDetail = () => {
         setReceta(entry.fields)
         setImage(entry.fields.image.fields.file.url)
         setIngredientes(entry.fields.ingredientes)
-        setDescription('puta')
+        setDescription(entry.fields.preparacion)
     }
 
     useEffect(() => {
@@ -66,8 +67,11 @@ const ProjectDetail = () => {
                     </span>
                     <span>
                         <h1 className="heading2-blue title-index">Preparación</h1>
-                        <p className="text-blue">{description}</p>
+                        <p className="text-blue description-text" dangerouslySetInnerHTML={{__html: formatDescription}}></p>
                     </span>
+                </div>
+                <div className="button-container">
+                    <Link className="heading2-red button-more" to='/Recetas'>Ver mas recetas</Link>
                 </div>
             </div>
         </div>
