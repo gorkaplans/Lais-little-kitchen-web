@@ -23,6 +23,7 @@
         display: grid;
         grid-template-columns: 0.6fr 1.6fr;
         gap: 0 4rem ; 
+        margin-bottom: 2rem;
 
     
         .ingredients-wrapper{
@@ -40,30 +41,6 @@
         }
     }
     
-        
-    
-    .button-container{
-        display: flex;
-        justify-content: center;
-        padding-top: 4rem;
-
-        .button-more{
-            padding: 0.8rem;
-            border: solid 1px $redhard;
-            border-radius: 8px;
-            -webkit-transition: all 0.1s ease-in !important;
-            -moz-transition: all 0.1s ease-in !important;
-            -o-transition: all 0.1s ease-in !important;
-            transition: all 0.1s ease-in !important;
-
-            &:hover{
-                box-shadow: 5px 5px 35px -16px rgba(0,0,0,0.42);
-                transform: scale(1.02);
-                background-color: $red3;
-            }
-
-        }
-    }
     
     @media (max-width: 900px){
         .detail-hero{
@@ -86,11 +63,6 @@
             .ingredients-wrapper{
                 margin-bottom: 1rem;
             }
-
-        }
-
-        .button-container{
-            padding-top: 2rem;
 
         }
     }

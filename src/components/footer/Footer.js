@@ -8,8 +8,8 @@ import'./Footer.scss'
 const Footer = () => {
     
     return (
-    <section className="section">
-        <div className="container">
+    <section className="section section-footer">
+        <div className="container container-footer">
             <div className="footer-wrapper">
                 <a href="mailto:hi@laislittlekitchen" className="text-red mailto">hi@laislittlekitchen</a>
                 <a className="social-icon" target="_blank" href="https://www.instagram.com/laislittlekitchen/?hl=es">

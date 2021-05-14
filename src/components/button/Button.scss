@@ -1,0 +1,32 @@
+@import '../../styles.scss';
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+
+  .button-more{
+      padding: 0.8rem;
+      border: solid 1px $redhard;
+      border-radius: 8px;
+      -webkit-transition: all 0.1s ease-in !important;
+      -moz-transition: all 0.1s ease-in !important;
+      -o-transition: all 0.1s ease-in !important;
+      transition: all 0.1s ease-in !important;
+
+      &:hover{
+          box-shadow: 5px 5px 35px -16px rgba(0,0,0,0.42);
+          transform: scale(1.02);
+          background-color: $red3;
+      }
+
+  }
+}
+
+@media (max-width: 900px){
+
+  .button-container{
+      padding-top: 2rem;
+
+  }
+}

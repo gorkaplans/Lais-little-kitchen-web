@@ -3,8 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import marked from 'marked'
 
 
-import { client } from '../../client'
 
+import { client } from '../../client'
+import Button from '../button'
 
 
 import './ProjectDetail.scss'
@@ -70,9 +71,7 @@ const ProjectDetail = () => {
                         <p className="text-blue description-text" dangerouslySetInnerHTML={{__html: formatDescription}}></p>
                     </span>
                 </div>
-                <div className="button-container">
-                    <Link className="heading2-red button-more" to='/Recetas'>Ver mas recetas</Link>
-                </div>
+                <Button text="Ver mas recetas"></Button>
             </div>
         </div>
 

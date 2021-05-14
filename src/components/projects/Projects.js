@@ -10,7 +10,7 @@ import'./Projects.scss'
 
 
 
-const Projects = ({}) => {
+const Projects = ({size}) => {
     const[recetas, setRecetas] = useState([])
 
     let history = useHistory();
@@ -37,7 +37,7 @@ const Projects = ({}) => {
             <p className="text-red">Aquí puedes ver algunas de mis recetas, por si la quieres seguir paso a paso!</p>
         </div>
  {       <div className="container projects-wrapper">
-            {recetas.map((receta, index) => 
+            {recetas.slice(0,size).map((receta, index) => 
             <>
             <div className="project-preview">
                 <h1 className="heading3-red">{receta.fields.name}</h1>

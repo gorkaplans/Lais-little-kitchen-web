@@ -1,0 +1,30 @@
+.all{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .contact-margin{
+        width: 100%;
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding-right: 10rem;
+    }
+    
+    .footer-global{
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+
+}
+
+
+
+@media (max-width: 710px){
+    .all{
+  
+        .contact-margin{
+            padding-right: 0rem;
+        }
+    }
+}
