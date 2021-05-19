@@ -48,6 +48,7 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 
 *{
@@ -57,18 +58,18 @@ table {
 }
 
 
-$bluehard:#10095a;
-$bluesoft:#60568e;
+$bluehard:#50a7ad;
+$bluesoft:#53999e;
 
-$redhard:#ce6969;
-$redsoft:#e29b9a;
-$red3: #fce4e4;
+$redhard:#50a7ad;
+$redsoft:#53999e;
+$red3: #f2f9fa;
 
 
 $transition1: all 0.3s ease-in-out;
 
 .heading{
-    font-family: 'Changa one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 52px;
     text-decoration: none;
     color: $bluehard;
@@ -77,14 +78,14 @@ $transition1: all 0.3s ease-in-out;
 }
 
 .heading2-blue{
-    font-family: 'Changa one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
     text-decoration: none;
     color: $bluehard;
 }
 
 .heading2-red{
-    font-family: 'Changa one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 28px;
     text-decoration: none;
     color: $redhard;
@@ -92,7 +93,7 @@ $transition1: all 0.3s ease-in-out;
 }
 
 .heading3-red{
-    font-family: 'Changa one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
     text-decoration: none;
     color: $redhard;
@@ -100,7 +101,7 @@ $transition1: all 0.3s ease-in-out;
 }
 
 .heading3-blue{
-    font-family: 'Changa one', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
     text-decoration: none;
     color: $bluehard;

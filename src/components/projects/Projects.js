@@ -40,9 +40,8 @@ const Projects = ({size}) => {
             {recetas.slice(0,size).map((receta, index) => 
             <>
             <div className="project-preview">
-                <h1 className="heading3-red">{receta.fields.name}</h1>
+                <h1 className="heading2-red receta-title" onClick={() => handleOnClick(receta.sys.id)}>{receta.fields.name}</h1>
                 <div className="div-link" onClick={() => handleOnClick(receta.sys.id)}>
-                    <p className="text-red">Ver receta</p>
                     <img className="image-preview" src={receta.fields.image.fields.file.url}></img>
                 </div>
             </div>

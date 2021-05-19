@@ -3,7 +3,7 @@
 .section-footer{
     margin-top: auto;
     .footer-wrapper{
-        border-top: solid #ce6969 1px ;
+        border-top: solid $bluehard 1px ;
         width: 100%;
         padding-top: 1rem;
         display: flex;
@@ -16,7 +16,7 @@
     
     
             &:hover{
-                color: #ce6969 ;
+                color: $bluesoft ;
             }
         }
     

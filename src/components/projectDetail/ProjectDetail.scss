@@ -8,12 +8,19 @@
     .detail-hero{
         display: flex;
         flex-direction: column;
+
+        .receta-title-detail{
+            border-bottom: 1px $bluesoft solid;
+            padding-bottom: 1rem;
+            cursor: pointer;
+        
+          }
     
         .detail-img{
             min-width: 100%;
             max-width: 100%;
             margin-top: 2rem;
-            border-radius: 1rem;
+            border-radius: 0.4rem;
             margin-bottom: 4rem;
         }
     }
@@ -35,6 +42,10 @@
         }
 
         .description-text{
+
+            max-width: 500px !important;
+
+
             p{
                 margin-bottom: 1rem;
             }

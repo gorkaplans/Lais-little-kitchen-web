@@ -15,7 +15,7 @@
       transition: all 0.1s ease-in !important;
 
       &:hover{
-          box-shadow: 5px 5px 35px -16px rgba(0,0,0,0.42);
+          box-shadow: 5px 5px 20px -16px rgba(0,0,0,0.42);
           transform: scale(1.02);
           background-color: $red3;
       }

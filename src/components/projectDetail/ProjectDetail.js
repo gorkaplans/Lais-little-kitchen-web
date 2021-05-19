@@ -43,7 +43,7 @@ const ProjectDetail = () => {
         <div className="section">
             <div className="container container-detail">
                 <div className="detail-hero">
-                    <h1 className="heading">{receta.name}</h1>
+                    <h1 className="heading receta-title-detail">{receta.name}</h1>
                     <img className="detail-img" src={image}></img>
                 </div>
                 <div className="description-container">

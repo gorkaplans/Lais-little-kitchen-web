@@ -11,6 +11,13 @@
   grid-template-rows: 1fr 1fr;
   gap: 3rem 3rem;
 
+  .receta-title{
+    border-bottom: 1px $bluesoft solid;
+    padding-bottom: 0.8rem;
+    cursor: pointer;
+
+  }
+
   .div-link{
     cursor: pointer;
 
@@ -19,13 +26,16 @@
     width: 100%;
     overflow: hidden; 
     object-fit: cover;
-    opacity: 0.8;
-    border-radius: 0.5rem;
-    transition: ease-in 0.3s;
+    opacity: 0.9;
+    border-radius: 0.2rem;
+    transition: ease-in 0.2s;
 
 
     &:hover{
       opacity: 1;
+      border-radius: 0.8rem;
+      box-shadow: 5px 5px 30px -16px rgba(0,0,0,0.6);
+
     }
   }
   }
