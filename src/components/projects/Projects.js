@@ -18,6 +18,18 @@ const Projects = ({size}) => {
     const handleOnClick = (id) =>{
       history.push(`Recetas/${id}`) 
     }    
+    
+    const handleOnClickCategory = (category) =>{
+        client.getEntries({
+            'fields.category': category,
+            'content_type': 'recetas'
+
+        })
+        .then((respone) => {
+            console.log(respone.items)
+        })
+        .catch(console.error)
+    }    
      
 
     useEffect(() => {
@@ -29,12 +41,22 @@ const Projects = ({size}) => {
 
         
     }, ([]));
+
+  
     
     return (
     <section className="section">
         <div className="container title-projects">
             <h1 className="heading2-red">Alguna recetas...</h1>
             <p className="text-red">Aquí puedes ver algunas de mis recetas, por si la quieres seguir paso a paso!</p>
+            <div className="filter-wrapper">
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Dulces & repostería')}>Dulces & repostería</p>
+                <p className="text-blue filter-item">Pasta & Arroz</p>
+                <p className="text-blue filter-item">Verduras</p>
+                <p className="text-blue filter-item">Carnes</p>
+                <p className="text-blue filter-item">Pescados </p>
+                <p className="text-blue filter-item">Masas & pan</p>
+            </div>
         </div>
  {       <div className="container projects-wrapper">
             {recetas.slice(0,size).map((receta, index) => 
