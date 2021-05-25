@@ -8,12 +8,23 @@
     margin-top: 2rem;
     display: flex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px 20px;
 
     .filter-item{
       cursor: pointer;
+      border: solid 1px $bluesoft;
+      padding: 0.5rem;
+      width: 100%;
+      text-align: center !important;
+
+      &:hover{
+        box-shadow: 5px 5px 20px -16px rgba(0,0,0,0.42);
+        transform: scale(1.02);
+        background-color: $red3;
+      }
+
     }
   }
 }

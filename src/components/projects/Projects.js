@@ -4,7 +4,6 @@ import {  client } from '../../client';
 import { useHistory } from "react-router-dom";
 
 
-
 import'./Projects.scss'
 
 
@@ -26,23 +25,27 @@ const Projects = ({size}) => {
 
         })
         .then((respone) => {
-            console.log(respone.items)
+            setRecetas(respone.items)
         })
         .catch(console.error)
     }    
-     
 
-    useEffect(() => {
+    const handleOnClickAll = () =>{
         client.getEntries()
         .then((respone) => {
             setRecetas(respone.items)
         })
         .catch(console.error)
+    }
+     
 
+    useEffect(() => {
+     handleOnClickAll();
         
-    }, ([]));
+    }, []);
 
-  
+
+    console.log(recetas)
     
     return (
     <section className="section">
@@ -51,11 +54,13 @@ const Projects = ({size}) => {
             <p className="text-red">Aquí puedes ver algunas de mis recetas, por si la quieres seguir paso a paso!</p>
             <div className="filter-wrapper">
                 <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Dulces & repostería')}>Dulces & repostería</p>
-                <p className="text-blue filter-item">Pasta & Arroz</p>
-                <p className="text-blue filter-item">Verduras</p>
-                <p className="text-blue filter-item">Carnes</p>
-                <p className="text-blue filter-item">Pescados </p>
-                <p className="text-blue filter-item">Masas & pan</p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Pasta & arroz')}>Pasta & Arroz</p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Verduras & legumbres')}>Verduras & legumbres</p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Carnes')}>Carnes</p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Pescados')}>Pescados </p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Masas & pan')}>Masas & pan</p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickAll()}>Todas</p>
+
             </div>
         </div>
  {       <div className="container projects-wrapper">
