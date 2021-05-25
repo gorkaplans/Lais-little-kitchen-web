@@ -13,7 +13,7 @@ return (
   <Header></Header>
   <div className="contact-margin">
   <Hero 
-      text2='Si quieres hacer alguna colaboracions, rcomendarme alguna receta o simplemente decirme hola, puedes escribirme a este correo y te respondere encantada :)'
+      text2='Si queréis preguntarme cualquier duda, hacer una colaboración conmigo, recomendarme alguna receta o simplemente decirme hola, podéis escribirme a este correo y os responderé encantada! :)'
       text='hi@laislittlekitchen.com'>
     </Hero>
   </div> 
