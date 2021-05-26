@@ -119,6 +119,16 @@ $transition1: all 0.3s ease-in-out;
     text-align: justify;
     text-justify: inter-word;
 }
+.text-blue2{
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 14px; 
+    color: $bluesoft; 
+    margin-bottom: (5px);
+    text-decoration: none; 
+    text-align: justify;
+    text-justify: inter-word;
+}
 
 .text-red{
     font-family: 'inter';
@@ -136,6 +146,10 @@ $transition1: all 0.3s ease-in-out;
     padding: 40px 100px 30px 100px;
     display: flex;
 
+}
+
+.opacity-1{
+    opacity: 0.8;
 }
 
 
@@ -157,6 +171,9 @@ $transition1: all 0.3s ease-in-out;
     }
 
     .text-blue{
+        font-size: 12px;
+    }
+    .text-blue2{
         font-size: 12px;
     }
 }
