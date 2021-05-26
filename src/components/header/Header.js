@@ -16,11 +16,11 @@ const Header = () => {
     }
     
     return (
-    <section className="section">
-        <div className="container">
+    <section className="section section-header">
+       
             <Link className="heading2-red mobile-logo" to='/'>Lai's little kitchen</Link>
             <div className={(activo) ? "nav-menu activado" : "nav-menu descativado"}>
-                    <Link className="text-blue nav-item" to='/About'>Sobre mi</Link>
+                    <Link className="text-blue nav-item" to='/About'>¡Hola!</Link>
                     <Link className="text-blue nav-item" to='/Recetas'>Recetas</Link>
                     <Link className="text-blue nav-item" to='/Contact'>Contacto</Link>
             </div>
@@ -29,7 +29,7 @@ const Header = () => {
                 <span className="br-2"></span>
                 <span className="br-3"></span>
             </button>
-        </div>
+        
     </section>
     
     ) } 

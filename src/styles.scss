@@ -116,7 +116,8 @@ $transition1: all 0.3s ease-in-out;
     max-width: 450px;
     margin-bottom: 10px;
     text-decoration: none; 
-    text-align: start;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .text-red{
@@ -126,6 +127,8 @@ $transition1: all 0.3s ease-in-out;
     color: $redsoft; 
     max-width: 450px;
     margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 

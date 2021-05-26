@@ -61,9 +61,13 @@ const ProjectDetail = () => {
                             <h1 className="heading3-blue title-index"> Dificultad</h1>
                             <p className="text-blue">{receta.dificult}</p>
                         </span>
-                        <span>
+                        <span className="index-item-wrapper">
                             <h1 className="heading3-blue title-index"> Tiempo</h1>
                             <p className="text-blue">{receta.time}</p>
+                        </span>
+                        <span className="index-item-wrapper">
+                            <h1 className="heading3-blue title-index">Raciones</h1>
+                            <p className="text-blue">{receta.raciones}</p>
                         </span>
                     </span>
                     <span>

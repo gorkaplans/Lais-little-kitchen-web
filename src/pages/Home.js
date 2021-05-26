@@ -17,7 +17,9 @@ return (
       image='https://uploads-ssl.webflow.com/608851f5a265f957720336c3/60a53e87f5f1fff5fbc451ea_608fe3bb429581388fcb57b2_Hero-background%20copy%20copy.jpg'>
     </Hero>
     <Projects
-    size="4">
+    size="4"
+    title="Últimas recetas"
+    subtitle=''>
     </Projects>
     <Button text='Ver todas las recetas'></Button>
     <Footer></Footer>  

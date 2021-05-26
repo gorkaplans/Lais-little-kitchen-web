@@ -1,3 +1,6 @@
+@import '../styles.scss';
+
+
 .all{
     height: 100vh;
     display: flex;
@@ -8,6 +11,25 @@
         display: flex;
         justify-content: center;
         padding-right: 10rem;
+
+        .container-contact{
+            
+            display: flex;
+            flex-direction: column;
+
+            .heading-contact{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 52px;
+                text-decoration: none;
+                color: $bluehard;
+                text-align: start;
+            }
+
+        }
+
+  
     }
     
     .footer-global{
@@ -25,6 +47,23 @@
   
         .contact-margin{
             padding-right: 0rem;
+
+            .container-contact{
+            
+                display: flex;
+                flex-direction: column;
+                max-width: 100%;
+                overflow: hidden;
+    
+                .heading-contact{
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: max($numbers: 100%);
+                    text-decoration: none;
+                    color: $bluehard;
+                    text-align: start;
+                }
+    
+            }
         }
     }
 }

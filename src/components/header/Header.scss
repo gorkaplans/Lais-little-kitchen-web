@@ -1,5 +1,12 @@
 @import '../../styles.scss';
 
+.section-header{
+  background-color: #e4f2f8;
+  display: flex;
+  padding: 2rem 100px 1rem 100px;
+}
+
+
 .nav-menu{
   display: flex;
   margin-left: auto;
@@ -37,6 +44,12 @@
 }
   
 @media (max-width: 710px){
+
+  .section-header{
+    padding: 2rem 40px 1rem 40px;
+  }
+
+
   .nav-menu{
     padding-top: 5px;
     flex-direction: column;

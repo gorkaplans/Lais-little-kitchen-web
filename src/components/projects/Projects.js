@@ -9,7 +9,7 @@ import'./Projects.scss'
 
 
 
-const Projects = ({size}) => {
+const Projects = ({size, title}) => {
     const[recetas, setRecetas] = useState([])
 
     let history = useHistory();
@@ -50,17 +50,14 @@ const Projects = ({size}) => {
     return (
     <section className="section">
         <div className="container title-projects">
-            <h1 className="heading2-red">Alguna recetas...</h1>
-            <p className="text-red">Aquí puedes ver algunas de mis recetas, por si la quieres seguir paso a paso!</p>
+            <h1 className="heading2-red">{title}</h1>
             <div className="filter-wrapper">
                 <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Dulces & repostería')}>Dulces & repostería</p>
                 <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Pasta & arroz')}>Pasta & Arroz</p>
                 <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Verduras & legumbres')}>Verduras & legumbres</p>
-                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Carnes')}>Carnes</p>
-                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Pescados')}>Pescados </p>
+                <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Carnes & pescados')}>Carnes & pescados</p>
                 <p className="text-blue filter-item" onClick={() => handleOnClickCategory('Masas & pan')}>Masas & pan</p>
                 <p className="text-blue filter-item" onClick={() => handleOnClickAll()}>Todas</p>
-
             </div>
         </div>
  {       <div className="container projects-wrapper">
