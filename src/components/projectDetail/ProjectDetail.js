@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import marked from 'marked'
 
 
@@ -35,16 +35,16 @@ const ProjectDetail = () => {
 
     useEffect(() => {
         getSingleReceta(id)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
-    console.log(receta)
 
     return (
         <div className="section">
             <div className="container container-detail">
                 <div className="detail-hero">
                     <h1 className="heading receta-title-detail">{receta.name}</h1>
-                    <img className="detail-img" src={image}></img>
+                    <img className="detail-img" alt="food comida receta" src={image}></img>
                 </div>
                 <div className="description-container">
                     <span>

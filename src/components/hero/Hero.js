@@ -1,5 +1,4 @@
 import React from 'react'; 
-import { Link } from 'react-router-dom';
 
 import'./Hero.scss'
 
@@ -14,7 +13,7 @@ const Hero = ({text, text2, image}) => {
             <p className="text-blue">{text2}</p>
             <h1 className="heading title-hero">{text}</h1>
         </div>
-        <img className="image-hero" src={image}></img>
+        <img className="image-hero" alt="kitchen" src={image}></img>
     </section>
     
     ) } 

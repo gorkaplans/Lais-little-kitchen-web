@@ -32,7 +32,7 @@ const AboutContainer = ({image}) => {
                     
                 </span>
 
-                     <img className="image-about" src={image}></img>
+                     <img className="image-about" src={image} alt='lais about'></img>
             </div>
 
         </div>

@@ -1,6 +1,5 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Hero from '../components/hero';
 
 import './Contact.scss'
 
@@ -18,7 +17,7 @@ return (
             
             <p className="text-blue">O bien escribirme en Instagram</p>
 
-            <a href="https://www.instagram.com/laislittlekitchen/?hl=es" target="_blank" className="heading-contact">@laislittlekitchen</a>
+            <a href="https://www.instagram.com/laislittlekitchen/?hl=es" target="_blank" rel="noopener noreferrer" className="heading-contact">@laislittlekitchen</a>
 
         </div>
   </div> 

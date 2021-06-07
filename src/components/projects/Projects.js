@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'; 
-import { Link } from 'react-router-dom';
 import {  client } from '../../client'; 
 import { useHistory } from "react-router-dom";
 
@@ -45,7 +44,6 @@ const Projects = ({size, title}) => {
     }, []);
 
 
-    console.log(recetas)
     
     return (
     <section className="section">
@@ -66,7 +64,7 @@ const Projects = ({size, title}) => {
             <div className="project-preview">
                 <h1 className="heading2-red receta-title" onClick={() => handleOnClick(receta.sys.id)}>{receta.fields.name}</h1>
                 <div className="div-link" onClick={() => handleOnClick(receta.sys.id)}>
-                    <img className="image-preview" src={receta.fields.image.fields.file.url}></img>
+                    <img className="image-preview" alt="comida receta food" src={receta.fields.image.fields.file.url}></img>
                 </div>
             </div>
             </>
