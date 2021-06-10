@@ -26,7 +26,7 @@
     }
 
     &:hover{
-      width: 1.9%;
+      transform: scale(1.1);
     }
 
 }
@@ -54,8 +54,7 @@
 
       &:hover{
         color: $bluehard;
-        font-size: 15px;
-      }
+        transform: scale(1.1)      }
     }
 }
 
