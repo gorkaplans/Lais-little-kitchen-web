@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Recetas from './pages/Recetas'
 import Contact from './pages/Contact'
+import Legal from './pages/Legal'
 import RecetaDetail from './pages/RecetaDetail';
 
 
@@ -30,9 +31,12 @@ function App() {
             <Route path="/About" exact>
                 <About />
             </Route>
+            <Route path="/legal" exact>
+                <Legal />
+            </Route>
             <Route path="/Recetas/:id">
               <RecetaDetail />
-         </Route>
+            </Route>
         </Switch>  
     </Router>
     </div>
